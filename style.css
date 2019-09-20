@@ -1,13 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
+/* repeat 5 é para determinar as sections; 40vh é para o footer. */
 .wrapper {
     min-height: 100vh;
     background: black;
     display: grid;
-    grid-template-rows: 10vh repeat(4,90vh);
+    grid-template-rows: 10vh repeat(5,90vh) 40vh;
 }
 
 header {
@@ -17,13 +22,89 @@ header {
     left: 0;
 }
 
-section:nth-of-type(odd) {
-    background: red;
-}
-section:nth-of-type(even) {
-    background: blue;
-}
-footer {
-    background: cyan;
+/* Coloquei outro grida dentro dessa classe para poder posicionar os elementos. Dessa linha para baixo, é só alteração minha. */
+.case-de-sucessos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px repeat(2, 1fr);
+    grid-gap: 20px;
+    background: #1F1F24;
+    font-family: 'Fjalla One', sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
+.case-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #D2C2B0;
+}
+
+.case-depoimento {
+    color: white;
+    padding-left: 10px; 
+}
+
+#case-header {
+    color: white;
+    grid-column: 3 / 4;
+    justify-self: center;
+}
+
+#case-img-1 {
+    grid-row: 2 / 3;
+    grid-column: 2 /3;
+    margin: auto;
+}
+
+#case-img-2 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    margin: auto;
+}
+
+#case-img-3 {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    margin: auto;
+}
+
+#depoimento-case-1 {
+    grid-row: 3 / 4;
+    grid-column: 2 /3;
+}
+
+#depoimento-case-2 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+#depoimento-case-3 {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+
+/* outro display grid para poder posicionar os elementos. */
+footer {
+    background: #69696D;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-items: center;
+    color: #1F1F24;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+footer h1 {
+    grid-column: 2 / 3;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+#linkedin-img, #instagram-img, #twitter-img {
+    grid-row: 2 / 3;
+}
