@@ -1,0 +1,120 @@
+# {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;  
+}
+.banner {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:250px;
+    background-position: top
+  }
+
+.banner-informacoes{
+    padding-top:10vh;
+    text-align: left;
+    
+}
+
+.banner-informacoes p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    background-color: black;
+}
+
+.banner-informacoes a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.banner-informacoes a:hover {
+    background-color: palevioletred;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+}
+
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: black;
+    margin: 30px;
+     
+}
+
+.logo {
+    top: 16%;
+    width: 14%;
+    left: 44%;
+    height: 32vh;
+    border-radius: 50%;
+    position: static;
+    object-fit: cover;
+}
+
+/*Sobre mim*/
+
+.sobre-mim,
+.redes-sociais {
+    max-width: 1028px;
+    margin: 0 auto; 
+    padding: 5rem, 0 0 0;
+}
+
+
+
+
+
+
+/*Redes Sociais*/
+
+.redes-sociais_item-facebook,
+.redes-sociais_item-linkedin,
+.redes-sociais_item-twitter,
+.redes-sociais_item-github {
+    background-color:black;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 40px;
+    }
+
+.redes-sociais_item-facebook a,
+.redes-sociais_item-linkedin a,
+.redes-sociais_item-twitter a,
+.redes-sociais_item-github a {
+    text-decoration: none;
+    color: white;
+    }
+
+       .redes-sociais_item {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+            }
+
+            /*Footer*/
+
+            footer {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding: 5px;
+                background: black;
+                color: white;
+                margin: 0;
+            }
