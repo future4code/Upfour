@@ -9,14 +9,28 @@
     min-height: 100vh;
     background: black;
     display: grid;
-    grid-template-rows: 10vh repeat(5,90vh) 40vh;
+    grid-template-rows: 15vh repeat(5,90vh) 40vh;
 }
 
-header {
-    background: green;
+nav {
+    background: #D2C2B0;
     position: sticky;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav p {
+    margin: 0 15px;
+}
+
+#logo {
+    margin-right: 53vw;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
 }
 
 /* Coloquei outro grida dentro dessa classe para poder posicionar os elementos. Dessa linha para baixo, é só alteração minha. */
