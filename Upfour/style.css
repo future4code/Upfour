@@ -57,7 +57,8 @@ header {
 }
 
 section:nth-of-type(odd) {
-    background: red;
+    background:#f7ffe0
+    ;
 }
 section:nth-of-type(even) {
     background: blue;
