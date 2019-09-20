@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: black;
+    display: grid;
+    grid-template-rows: 10vh repeat(4,90vh);
+}
+
+header {
+    background: green;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+section:nth-of-type(odd) {
+    background: red;
+}
+section:nth-of-type(even) {
+    background: blue;
+}
+footer {
+    background: cyan;
+}
+
