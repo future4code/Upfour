@@ -1,8 +1,5 @@
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
@@ -29,7 +26,6 @@ header {
     grid-template-rows: 80px repeat(2, 1fr);
     grid-gap: 20px;
     background: #1F1F24;
-    font-family: 'Fjalla One', sans-serif;
     align-items: center;
     justify-content: center;
 }
@@ -62,6 +58,7 @@ header {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     margin: auto;
+    object-fit: cover;
 }
 
 #case-img-3 {
@@ -93,7 +90,6 @@ footer {
     align-content: center;
     justify-items: center;
     color: #1F1F24;
-    font-family: 'Fjalla One', sans-serif;
 }
 
 footer h1 {
