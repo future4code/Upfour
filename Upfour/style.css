@@ -17,6 +17,12 @@ header {
     left: 0;
 }
 
+.cotainer-img {
+    width: 50%;
+    height:%;
+    
+}
+
 .quem-somos-container {
     text-align: center;
     font-family: calibri;
@@ -25,14 +31,14 @@ header {
 }
 
 .quem-somos-container img{
-    height: 45%;
-    width: 60%;
+    width: 100%;
+    height:290px;
     align-content: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    
+    margin-top: auto;
+    object-fit: cover;
     
 }
 
